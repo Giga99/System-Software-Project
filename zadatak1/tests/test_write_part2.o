@@ -1,0 +1,78 @@
+Relocative object file
+
+Section table:
+Id	Name		Size
+0	UNDEFINED	0000
+ffffffff	ABSOLUTE	0002
+1	text	003d
+2	data	0016
+
+
+Symbol table:
+Value	Type	Section		Name		Id
+0000	l	UNDEFINED	UNDEFINED	0000
+0000	l	ABSOLUTE	ABSOLUTE	0001
+0000	e	UNDEFINED	PRINT_REG	0002
+0005	g	ABSOLUTE	B_value	0003
+0000	g	text	print	0004
+0000	g	data	A_location	0005
+0002	g	data	B_text	0006
+0000	l	text	text	0007
+0009	l	text	loop_print	0008
+0000	l	data	data	0009
+
+
+Relocation data <UNDEFINED>:
+Offset	Type		Dat/Ins	Symbol	Section name
+
+Section data <UNDEFINED>:
+
+
+Relocation data <ABSOLUTE>:
+Offset	Type		Dat/Ins	Symbol	Section name
+
+Section data <ABSOLUTE>:
+0000: 05 00 
+
+Relocation data <text>:
+Offset	Type		Dat/Ins	Symbol	Section name
+0010	R_H_16	i	PRINT_REG	text
+0015	R_H_16_PC	i	PRINT_REG	text
+0032	R_H_16	i	text	text
+
+Section data <text>:
+0000: b0 16 12 
+0003: b0 36 12 
+0006: b0 56 12 
+0009: a0 32 02 
+000c: b0 3f 04 00 00 
+0011: b0 37 03 ff fe 
+0016: a0 1f 00 00 01 
+001b: a0 5f 00 00 02 
+0020: 72 15 
+0022: 70 21 
+0024: a0 1f 00 00 00 
+0029: a0 32 02 
+002c: 74 31 
+002e: 52 ff 00 00 09 
+0033: a0 56 42 
+0036: a0 36 42 
+0039: a0 16 42 
+003c: 40 
+
+Relocation data <data>:
+Offset	Type		Dat/Ins	Symbol	Section name
+
+Section data <data>:
+0000: 04 00 
+0002: 42 00 
+0004: 20 00 
+0006: 56 00 
+0008: 41 00 
+000a: 4c 00 
+000c: 55 00 
+000e: 45 00 
+0010: 3a 00 
+0012: 20 00 
+0014: 00 00 
+
